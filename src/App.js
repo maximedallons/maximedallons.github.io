@@ -1,8 +1,13 @@
 import Banner from './assets/images/me1.jpg';
 import Laptop from './assets/images/laptop.png';
 import ThinkingGuy from './assets/images/thinkingGuy.png';
+import {useEffect} from "react";
 
 function App() {
+    useEffect(() => {
+        document.title = "Maxime Dallons | Portfolio";
+        document.description = "A developper's portfolio containing my work, projects, and more.";
+    }, []);
   return (
     <div className="app">
         <div className="hidden xl:block xl:w-full xl:h-40">
