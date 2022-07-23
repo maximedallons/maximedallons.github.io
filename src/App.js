@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="app">
 
-        <nav>
+        <nav className="hidden xl:inline">
             <div className="flex flex-row items-center justify-between p-4 md:p-8 bg-dark border-b-4 border-b-darker text-amber-50">
                 <div className="flex items-center">
                     <div className="flex-shrink-0">
@@ -33,36 +33,50 @@ function App() {
             </div>
         </nav>
 
-        <section className="mx-10 mt-10 grid grid grid-cols-3">
-            <div className="col-span-2 flex flex-col justify-center items-center mb-10% mr-25%">
-                <p className="w-sm font-sora text-5xl">Hi, I'm</p>
-                <p className="w-sm font-sora text-7xl font-bold pt-3">MAXIME</p>
-                <p className="w-sm font-sora text-5xl text-red-800 pt-10">Junior developer</p>
+        <section className="xl:grid xl:grid-cols-3">
+            <div className="col-span-2 flex flex-col justify-center items-center">
+                <div>
+                    <p className="w-auto font-sora text-3xl xl:text-5xl pt-3">Hi, I'm</p>
+                    <p className="w-full font-sora text-5xl xl:text-7xl font-bold pt-3">MAXIME</p>
+                    <p className="w-full font-sora text-3xl xl:text-5xl text-red-800 py-5 ">Junior developer</p>
+                </div>
             </div>
-            <img src={Laptop} className="col-span-1"></img>
+            <img src={Laptop} className="hidden xl:inline xl:col-span-1"></img>
         </section>
 
-        <section className="w-full h-md bg-amber-50 border-t-4 border-darker text-dark overflow-hidden">
-            <h1 className="w-full font-sora text-7xl font-bold text-center pt-10">Story time</h1>
-            <div className="grid grid-cols-3">
-                <img src={ThinkingGuy} className="col-span-1 h-75%"></img>
-                <p className="col-span-2 m-32 text-left justify-self-center font-sora text-3xl">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+        <section className="w-full h-full bg-amber-50 border-t-4 border-darker text-dark overflow-hidden">
+            <h1 className="w-full font-sora text-5xl xl:text-7xl font-bold text-center pt-10">Story time</h1>
+            <div className="xl:grid xl:grid-cols-3">
+                <img src={ThinkingGuy} className="hidden xl:inline xl:col-span-1 xl:h-full"></img>
+                <div className="col-span-2 m-5 xl:m-32 text-left justify-self-center font-sora text-xl xl:text-5xl">
+                    <p>
+                        Depuis très jeune, j'ai dévelopé une passion pour tout ce qui se rapproche à l'informatique. Dés que j'ai eu un ordinateur en face de moi, j'ai ressenti un besoin de découvrir ce monde numérique.
+                    </p>
+                    <p className="my-5">
+                        L'envie de programmer a commencé chez moi par les jeux vidéos, notamment 'Minecraft'. Ce jeu étant un réel bac à sable, je me suis renseigné pour pouvoir y ajouter du contenu et en modifier pour pouvoir jouer au jeu à ma manière.
+                    </p>
+                    <p className="my-5">
+                        De là a commencé ma passion pour la programmation. Depuis, je réalise plusieurs projets personnels pour me divertir et me permettre d'agrandir mes horizons et peut-être un jour faire ce que j'aime depuis si longtemps dans un milieu professionnel.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section className="w-full h-md flex flex-col justify-between items-center bg-neutral-900 border-t-4 border-darker text-amber-50">
+        <section className="w-full h-full xl:h-md flex flex-col justify-between items-center bg-neutral-900 border-t-4 border-darker text-amber-50">
             <h1 className="w-full font-sora text-7xl font-bold text-center pt-10">My skills</h1>
-            <div className="w-full h-md flex flex-row justify-between items-center">
-                <div className="flex flex-col ml-32 w-96 h-72 bg-neutral-900 shadow-md shadow-black border-t-4 border-amber-400 ">
+
+            <div className="w-full h-full xl:h-md flex flex-col xl:flex-row justify-between items-center">
+
+                <div className="flex flex-col my-5 xl:my-0 xl:mx-16 w-75% xl:w-96 h-72 bg-neutral-900 shadow-md shadow-black border-t-4 border-amber-400">
                     <h2 className="w-full font-sora text-3xl font-bold text-center text-amber-400 pt-10">Software dev</h2>
                     <div className="w-full flex flex-col justify-center items-center font-sora text-xl my-5">
-                        <p className="my-1">Java</p>
-                        <p className="my-1">C#</p>
-                        <p className="my-1">Python</p>
-                        <p className="my-1">C++</p>
+                        <p className="py-">Java</p>
+                        <p className="py-1">C#</p>
+                        <p className="py-1">Python</p>
+                        <p className="py-1">C++</p>
                     </div>
                 </div>
-                <div className="flex flex-col w-96 h-72 bg-neutral-900 shadow-md shadow-black border-t-4 border-red-600 ">
+                <div className="flex flex-col my-5 xl:my-0 xl:mx-16 w-75% xl:w-96 h-72 bg-neutral-900 shadow-md shadow-black border-t-4 border-red-600 ">
                     <h2 className="w-full font-sora text-3xl font-bold text-center pt-10 text-red-600">Mobile dev</h2>
                     <div className="w-full flex flex-col justify-center items-center font-sora text-xl my-5">
                         <p className="my-1">Android Studio</p>
@@ -70,7 +84,7 @@ function App() {
                         <p className="my-1">Firebase</p>
                     </div>
                 </div>
-                <div className="flex flex-col w-96 h-72 bg-neutral-900 shadow-md shadow-black border-t-4 border-blue-600 ">
+                <div className="flex flex-col my-5 xl:my-0 xl:mx-16 w-75% xl:w-96 h-72 bg-neutral-900 shadow-md shadow-black border-t-4 border-blue-600 ">
                     <h2 className="w-full font-sora text-3xl font-bold text-center pt-10 text-blue-600">Web dev</h2>
                     <div className="w-full flex flex-col justify-center items-center font-sora text-xl my-5">
                         <p className="my-1">HTML / CSS</p>
@@ -79,7 +93,7 @@ function App() {
                         <p className="my-1">Node / React</p>
                     </div>
                 </div>
-                <div className="flex flex-col mr-32 w-96 h-72 bg-neutral-900 shadow-md shadow-black border-t-4 border-green-600 ">
+                <div className="flex flex-col my-5 xl:my-0 xl:mx-16 xl:mr-32 w-75% xl:w-96 h-72 bg-neutral-900 shadow-md shadow-black border-t-4 border-green-600 ">
                     <h2 className="w-full font-sora text-3xl font-bold text-center pt-10 text-green-600">Game dev</h2>
                     <div className="w-full flex flex-col justify-center items-center font-sora text-xl my-5">
                         <p className="my-1">Unreal Engine</p>

@@ -10,7 +10,7 @@
     }
 
     .nav-link{
-        @apply w-25% font-sora text-2xl font-semibold hover:text-4xl;
+        @apply w-25% font-sora text-2xl font-semibold text-neutral-400 hover:text-white;
     }
 }
 
