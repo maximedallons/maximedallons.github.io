@@ -581,26 +581,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.fixed{
-  position: fixed;
-}
-
-.absolute{
-  position: absolute;
-}
-
-.relative{
-  position: relative;
-}
-
-.bottom-0{
-  bottom: 0px;
-}
-
-.top-0{
-  top: 0px;
-}
-
 .col-span-2{
   grid-column: span 2 / span 2;
 }
@@ -632,16 +612,44 @@ video {
   margin-left: 1rem;
 }
 
-.mr-4{
-  margin-right: 1rem;
-}
-
 .mt-5{
   margin-top: 1.25rem;
 }
 
-.mr-32{
-  margin-right: 8rem;
+.ml-10{
+  margin-left: 2.5rem;
+}
+
+.ml-32{
+  margin-left: 8rem;
+}
+
+.ml-24{
+  margin-left: 6rem;
+}
+
+.ml-28{
+  margin-left: 7rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
+}
+
+.mr-3{
+  margin-right: 0.75rem;
+}
+
+.mr-1{
+  margin-right: 0.25rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
 }
 
 .flex{
@@ -650,6 +658,10 @@ video {
 
 .hidden{
   display: none;
+}
+
+.h-24{
+  height: 6rem;
 }
 
 .h-32{
@@ -664,34 +676,6 @@ video {
   height: 18rem;
 }
 
-.h-24{
-  height: 6rem;
-}
-
-.h-auto{
-  height: auto;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
-.h-sm{
-  height: 640px;
-}
-
-.h-1{
-  height: 0.25rem;
-}
-
-.h-40{
-  height: 10rem;
-}
-
-.w-32{
-  width: 8rem;
-}
-
 .w-64{
   width: 16rem;
 }
@@ -704,16 +688,18 @@ video {
   width: auto;
 }
 
+.w-fit{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-75\%{
   width: 75%;
 }
 
 .flex-shrink-0{
   flex-shrink: 0;
-}
-
-.snap-start{
-  scroll-snap-align: start;
 }
 
 .flex-row{
@@ -724,24 +710,16 @@ video {
   flex-direction: column;
 }
 
-.place-content-start{
-  place-content: start;
-}
-
-.content-start{
-  align-content: flex-start;
-}
-
-.items-start{
-  align-items: flex-start;
+.items-end{
+  align-items: flex-end;
 }
 
 .items-center{
   align-items: center;
 }
 
-.justify-start{
-  justify-content: flex-start;
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -750,18 +728,6 @@ video {
 
 .justify-between{
   justify-content: space-between;
-}
-
-.self-start{
-  align-self: flex-start;
-}
-
-.justify-self-start{
-  justify-self: start;
-}
-
-.justify-self-center{
-  justify-self: center;
 }
 
 .overflow-hidden{
@@ -829,24 +795,8 @@ video {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
-.object-contain{
-  object-fit: contain;
-}
-
 .object-cover{
   object-fit: cover;
-}
-
-.object-fill{
-  object-fit: fill;
-}
-
-.p-4{
-  padding: 1rem;
-}
-
-.p-1{
-  padding: 0.25rem;
 }
 
 .p-2{
@@ -863,29 +813,12 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .pt-3{
   padding-top: 0.75rem;
 }
 
 .pt-10{
   padding-top: 2.5rem;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
-}
-
-.pt-5{
-  padding-top: 1.25rem;
-}
-
-.text-left{
-  text-align: left;
 }
 
 .text-center{
@@ -984,34 +917,8 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:left-1{
-    left: 0.25rem;
-  }
-
-  .sm\:left-8{
-    left: 2rem;
-  }
-
-  .sm\:mr-10{
-    margin-right: 2.5rem;
-  }
-
-  .sm\:mr-20{
-    margin-right: 5rem;
-  }
-
   .sm\:mr-32{
     margin-right: 8rem;
-  }
-
-  .sm\:pr-10{
-    padding-right: 2.5rem;
-  }
-}
-
-@media (min-width: 768px){
-  .md\:p-8{
-    padding: 2rem;
   }
 }
 
@@ -1020,16 +927,8 @@ video {
     position: fixed;
   }
 
-  .xl\:top-0{
-    top: 0px;
-  }
-
   .xl\:col-span-1{
     grid-column: span 1 / span 1;
-  }
-
-  .xl\:m-32{
-    margin: 8rem;
   }
 
   .xl\:my-0{
@@ -1062,24 +961,20 @@ video {
     display: none;
   }
 
-  .xl\:h-full{
-    height: 100%;
+  .xl\:h-40{
+    height: 10rem;
   }
 
   .xl\:h-md{
     height: 768px;
   }
 
-  .xl\:h-40{
-    height: 10rem;
+  .xl\:w-full{
+    width: 100%;
   }
 
   .xl\:w-96{
     width: 24rem;
-  }
-
-  .xl\:w-full{
-    width: 100%;
   }
 
   .xl\:grid-cols-3{
@@ -1088,10 +983,6 @@ video {
 
   .xl\:flex-row{
     flex-direction: row;
-  }
-
-  .xl\:p-2{
-    padding: 0.5rem;
   }
 
   .xl\:text-5xl{
@@ -1133,6 +1024,11 @@ video {
   .\32xl\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .\32xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 

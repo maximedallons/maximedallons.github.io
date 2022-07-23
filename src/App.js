@@ -53,12 +53,12 @@ function App() {
             <h1 className="w-full font-sora text-5xl xl:text-7xl font-bold text-center pt-10">Story time</h1>
             <div className="xl:grid xl:grid-cols-3">
                 <img src={ThinkingGuy} className="hidden 2xl:inline 2xl:col-span-1 2xl:h-full"></img>
-                <div className="col-span-full 2xl:col-span-2 m-5 2xl:m-32 text-center 2xl:text-left font-sora text-xl 2xl:text-5xl">
+                <div className="col-span-full 2xl:col-span-2 m-5 2xl:m-32 text-center 2xl:text-left font-sora text-xl 2xl:text-4xl">
                     <p>
                         Depuis très jeune, j'ai dévelopé une passion pour tout ce qui se rapproche à l'informatique. Dés que j'ai eu un ordinateur en face de moi, j'ai ressenti un besoin de découvrir ce monde numérique.
                     </p>
                     <p className="my-5">
-                        L'envie de programmer a commencé chez moi par les jeux vidéos, notamment 'Minecraft'. Ce jeu étant un réel bac à sable, je me suis renseigné pour pouvoir y ajouter du contenu et en modifier pour pouvoir jouer au jeu à ma manière.
+                        L'envie de programmer a commencé chez moi par les jeux vidéos, notamment 'Minecraft'. Ce jeu étant un réel bac à sable, je me suis renseigné pour pouvoir y ajouter du contenu pour pouvoir jouer au jeu à ma manière.
                     </p>
                     <p className="my-5">
                         De là a commencé ma passion pour la programmation. Depuis, je réalise plusieurs projets personnels pour me divertir et me permettre d'agrandir mes horizons et peut-être un jour faire ce que j'aime depuis si longtemps dans un milieu professionnel.
