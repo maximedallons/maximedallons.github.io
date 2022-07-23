@@ -5,50 +5,55 @@ import ThinkingGuy from './assets/images/thinkingGuy.png';
 function App() {
   return (
     <div className="app">
-
-        <nav className="hidden xl:inline">
-            <div className="flex flex-row items-center justify-between p-4 md:p-8 bg-dark border-b-4 border-b-darker text-amber-50">
-                <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                        <img className="h-32 w-32 rounded-full border-darker border-4 " src={Banner} alt="Me" />
-                    </div>
-                    <div className="ml-4">
-                        <div className="w-64">
-                            <a href="#" className="font-sora text-2xl font-semibold">
-                                Dallons Maxime
-                            </a>
-                            <p className="font-sora text-md font-light">
-                                Junior Developer
-                            </p>
+        <div className="hidden xl:block xl:w-full xl:h-40">
+            <nav className="hidden xl:inline xl:w-full xl:fixed">
+                <div className="flex flex-row items-center justify-between p-2 bg-dark border-b-4 border-b-darker text-amber-50">
+                    <div className="flex items-center">
+                        <div className="flex-shrink-0">
+                            <img className="h-24 h-24 rounded-full border-darker border-4 " src={Banner} alt="Me" />
+                        </div>
+                        <div className="ml-4">
+                            <div className="w-64">
+                                <a href="#" className="font-sora text-2xl font-semibold">
+                                    Dallons Maxime
+                                </a>
+                                <p className="font-sora text-md font-light">
+                                    Junior Developer
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <div className="w-full h-32 mx-64 flex flex-row items-center justify-between text-center">
+                        <a href="#StoryTime" className="nav-link">Story time</a>
+                        <a href="#Skills" className="nav-link">My skills</a>
+                        <a href="#" className="nav-link">My work</a>
+                        <a href="#" className="nav-link">Contact me</a>
+                        <a href="#" className="nav-link">CV</a>
+                    </div>
                 </div>
-                <div className="w-full h-32 mx-64 flex flex-row items-center justify-between text-center">
-                    <a href="#" className="nav-link">Story time</a>
-                    <a href="#" className="nav-link">My skills</a>
-                    <a href="#" className="nav-link">My work</a>
-                    <a href="#" className="nav-link">Contact me</a>
-                    <a href="#" className="nav-link">CV</a>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
-        <section className="xl:grid xl:grid-cols-3">
+
+        <section id="Introduction" className="xl:grid xl:grid-cols-3">
             <div className="col-span-2 flex flex-col justify-center items-center">
-                <div>
-                    <p className="w-auto font-sora text-3xl xl:text-5xl pt-3">Hi, I'm</p>
-                    <p className="w-full font-sora text-5xl xl:text-7xl font-bold pt-3">MAXIME</p>
-                    <p className="w-full font-sora text-3xl xl:text-5xl text-red-800 py-5 ">Junior developer</p>
+                <div className="w-full flex flex-row items-center justify-center sm:mr-32">
+                    <img className="h-24 h-24 rounded-full border-darker border-4 mt-5 xl:hidden" src={Banner} alt="Me" />
+                    <div className="flex flex-col ml-4">
+                        <p className="w-auto font-sora text-3xl xl:text-5xl pt-3">Hi, I'm</p>
+                        <p className="w-full font-sora text-5xl xl:text-7xl font-bold pt-3">MAXIME</p>
+                    </div>
                 </div>
+                <p className="w-full font-sora text-3xl xl:text-5xl text-red-800 py-5 text-center">Junior developer</p>
             </div>
             <img src={Laptop} className="hidden xl:inline xl:col-span-1"></img>
         </section>
 
-        <section className="w-full h-full bg-amber-50 border-t-4 border-darker text-dark overflow-hidden">
+        <section id="StoryTime" className="w-full h-full bg-amber-50 border-t-4 border-darker text-dark overflow-hidden">
             <h1 className="w-full font-sora text-5xl xl:text-7xl font-bold text-center pt-10">Story time</h1>
             <div className="xl:grid xl:grid-cols-3">
-                <img src={ThinkingGuy} className="hidden xl:inline xl:col-span-1 xl:h-full"></img>
-                <div className="col-span-2 m-5 xl:m-32 text-left justify-self-center font-sora text-xl xl:text-5xl">
+                <img src={ThinkingGuy} className="hidden 2xl:inline 2xl:col-span-1 2xl:h-full"></img>
+                <div className="col-span-full 2xl:col-span-2 m-5 2xl:m-32 text-center 2xl:text-left font-sora text-xl 2xl:text-5xl">
                     <p>
                         Depuis très jeune, j'ai dévelopé une passion pour tout ce qui se rapproche à l'informatique. Dés que j'ai eu un ordinateur en face de moi, j'ai ressenti un besoin de découvrir ce monde numérique.
                     </p>
@@ -62,7 +67,7 @@ function App() {
             </div>
         </section>
 
-        <section className="w-full h-full xl:h-md flex flex-col justify-between items-center bg-neutral-900 border-t-4 border-darker text-amber-50">
+        <section id="Skills" className="w-full h-full xl:h-md flex flex-col justify-between items-center bg-neutral-900 border-t-4 border-darker text-amber-50">
             <h1 className="w-full font-sora text-7xl font-bold text-center pt-10">My skills</h1>
 
             <div className="w-full h-full xl:h-md flex flex-col xl:flex-row justify-between items-center">

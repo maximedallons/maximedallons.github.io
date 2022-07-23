@@ -551,6 +551,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .app{
   margin: 0px;
   height: 100%;
@@ -577,8 +581,32 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.fixed{
+  position: fixed;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
 .col-span-2{
   grid-column: span 2 / span 2;
+}
+
+.col-span-full{
+  grid-column: 1 / -1;
 }
 
 .m-5{
@@ -604,6 +632,18 @@ video {
   margin-left: 1rem;
 }
 
+.mr-4{
+  margin-right: 1rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mr-32{
+  margin-right: 8rem;
+}
+
 .flex{
   display: flex;
 }
@@ -622,6 +662,30 @@ video {
 
 .h-72{
   height: 18rem;
+}
+
+.h-24{
+  height: 6rem;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.h-sm{
+  height: 640px;
+}
+
+.h-1{
+  height: 0.25rem;
+}
+
+.h-40{
+  height: 10rem;
 }
 
 .w-32{
@@ -648,6 +712,10 @@ video {
   flex-shrink: 0;
 }
 
+.snap-start{
+  scroll-snap-align: start;
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -656,8 +724,24 @@ video {
   flex-direction: column;
 }
 
+.place-content-start{
+  place-content: start;
+}
+
+.content-start{
+  align-content: flex-start;
+}
+
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-center{
@@ -666,6 +750,14 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.self-start{
+  align-self: flex-start;
+}
+
+.justify-self-start{
+  justify-self: start;
 }
 
 .justify-self-center{
@@ -737,8 +829,28 @@ video {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
+.object-contain{
+  object-fit: contain;
+}
+
+.object-cover{
+  object-fit: cover;
+}
+
+.object-fill{
+  object-fit: fill;
+}
+
 .p-4{
   padding: 1rem;
+}
+
+.p-1{
+  padding: 0.25rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .py-5{
@@ -751,6 +863,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pt-3{
   padding-top: 0.75rem;
 }
@@ -759,12 +876,24 @@ video {
   padding-top: 2.5rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
+}
+
 .text-left{
   text-align: left;
 }
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .font-sora{
@@ -854,6 +983,32 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+@media (min-width: 640px){
+  .sm\:left-1{
+    left: 0.25rem;
+  }
+
+  .sm\:left-8{
+    left: 2rem;
+  }
+
+  .sm\:mr-10{
+    margin-right: 2.5rem;
+  }
+
+  .sm\:mr-20{
+    margin-right: 5rem;
+  }
+
+  .sm\:mr-32{
+    margin-right: 8rem;
+  }
+
+  .sm\:pr-10{
+    padding-right: 2.5rem;
+  }
+}
+
 @media (min-width: 768px){
   .md\:p-8{
     padding: 2rem;
@@ -861,6 +1016,14 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:fixed{
+    position: fixed;
+  }
+
+  .xl\:top-0{
+    top: 0px;
+  }
+
   .xl\:col-span-1{
     grid-column: span 1 / span 1;
   }
@@ -883,12 +1046,20 @@ video {
     margin-right: 8rem;
   }
 
+  .xl\:block{
+    display: block;
+  }
+
   .xl\:inline{
     display: inline;
   }
 
   .xl\:grid{
     display: grid;
+  }
+
+  .xl\:hidden{
+    display: none;
   }
 
   .xl\:h-full{
@@ -899,8 +1070,16 @@ video {
     height: 768px;
   }
 
+  .xl\:h-40{
+    height: 10rem;
+  }
+
   .xl\:w-96{
     width: 24rem;
+  }
+
+  .xl\:w-full{
+    width: 100%;
   }
 
   .xl\:grid-cols-3{
@@ -911,6 +1090,10 @@ video {
     flex-direction: row;
   }
 
+  .xl\:p-2{
+    padding: 0.5rem;
+  }
+
   .xl\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -918,6 +1101,37 @@ video {
 
   .xl\:text-7xl{
     font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
+  .\32xl\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .\32xl\:m-32{
+    margin: 8rem;
+  }
+
+  .\32xl\:inline{
+    display: inline;
+  }
+
+  .\32xl\:h-full{
+    height: 100%;
+  }
+
+  .\32xl\:text-left{
+    text-align: left;
+  }
+
+  .\32xl\:text-5xl{
+    font-size: 3rem;
     line-height: 1;
   }
 }

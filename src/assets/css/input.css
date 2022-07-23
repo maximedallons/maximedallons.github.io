@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer components {
+    * {
+        scroll-behavior: smooth;
+    }
     .app{
         @apply w-full h-full bg-neutral-900 text-white m-0 p-0;
     }
