@@ -15,5 +15,18 @@
     .nav-link{
         @apply w-25% font-sora text-2xl font-semibold text-neutral-400 hover:text-white;
     }
+  .button{
+    @apply w-48 h-12 bg-red-800 rounded-lg font-sora text-2xl font-bold;
+    box-shadow: 0 6px #333;
+  }
+  .button:hover {
+    @apply bg-red-900;
+  }
+  .button:active {
+    @apply bg-red-900;
+    box-shadow: 0 2px #222;
+    transform: translateY(4px);
+  }
+
 }
 
