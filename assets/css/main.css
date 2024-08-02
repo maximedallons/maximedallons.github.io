@@ -22,8 +22,8 @@ body {
 
 @media (max-device-width: 950px) {
     body {
-        -webkit-overflow-scrolling: touch;
         overflow: auto !important;
+        -webkit-overflow-scrolling: touch !important;
     }
 }
 
