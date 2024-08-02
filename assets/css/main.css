@@ -124,6 +124,10 @@ body {
                 background: var(--secondary-color-hover);
             }
         }
+
+        & > .mobile-menu-toggle {
+            display: none;
+        }
     }
 }
 
@@ -133,6 +137,10 @@ body {
     }
     .nav-language {
         display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block !important;
     }
 
     .cards-container {
