@@ -8,8 +8,22 @@
 
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-container-header">
+                <a class="mobile-menu-toggle"><i class="fas fa-times fa-lg"></i></a>
+            </div>
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">WORK</a>
+            <a href="">SKILLS</a>
+            <a href="">CONTACT</a>
+            <a class="dropdown">LANGUAGES</a>
+        </div>
+    </div>
    <div class="header">
        <div class="nav-container">
            <div class="nav-logo">
@@ -23,6 +37,9 @@
            </div>
            <div class="nav-language">
                <a>Aa</a>
+           </div>
+           <div class="mobile-menu-toggle">
+                <a><i class="fas fa-bars fa-lg"></i></a>
            </div>
        </div>
    </div>
@@ -55,5 +72,9 @@
             </a>
         </div>
     </main>
+
+    <script type="text/javascript" src="assets/fontawesome/js/all.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
