@@ -67,6 +67,16 @@ body {
     }
 }
 
+@media only screen and (max-width: 950px) {
+    .cards-container {
+        flex-direction: column !important;
+
+        & > card {
+            height: 50vh;
+        }
+    }
+}
+
 .cards-container {
     display: flex;
     flex-direction: row;
