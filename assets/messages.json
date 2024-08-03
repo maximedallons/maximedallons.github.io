@@ -4,20 +4,20 @@
     "work" : "WORK",
     "skills" : "SKILLS",
     "contact" : "CONTACT",
-    "languages" : "LANGUAGES",
+    "languages" : "LANGUAGES"
   },
   "fr" : {
     "about" : "À PROPOS",
     "work" : "EXPÉRIENCES",
     "skills" : "COMPÉTENCES",
     "contact" : "CONTACT",
-    "languages" : "LANGUES",
+    "languages" : "LANGUES"
   },
   "jp" : {
     "about" : "自己紹介",
     "work" : "経歴",
     "skills" : "スキル",
     "contact" : "連絡先",
-    "languages" : "言語",
+    "languages" : "言語"
   }
 }
