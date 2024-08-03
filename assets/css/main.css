@@ -50,18 +50,21 @@ body {
                         border-radius: 0 0 5px 5px;
                     }
 
-                    &:hover {
+                    &:hover,
+                    &:active {
                         color: #8a8a8a !important;
                         background-color: var(--primary-color);
                     }
                 }
             }
 
-            &:hover + .dropdown-content {
+            &:hover + .dropdown-content,
+            &:active + .dropdown-content {
                 display: block;
             }
 
-            & + .dropdown-content:hover {
+            & + .dropdown-content:hover,
+            & + .dropdown-content:active {
                 display: block;
             }
         }
@@ -133,7 +136,8 @@ body {
             transition: all 0.3s;
             cursor: pointer;
 
-            &:hover {
+            &:hover,
+            &:active {
                 background: var(--button-background-color);
                 color: var(--background-color);
             }
@@ -188,7 +192,8 @@ body {
             transition: all 0.3s;
             cursor: pointer;
 
-            &:hover {
+            &:hover,
+            &:active {
                 background: var(--button-background-color);
                 color: var(--background-color);
             }
@@ -199,7 +204,8 @@ body {
             background: var(--secondary-color);
             padding: 0.25rem 1rem;
 
-            &:hover {
+            &:hover,
+            &:active {
                 background: var(--secondary-color-hover);
             }
         }
@@ -286,7 +292,8 @@ body {
             }
         }
 
-        &:hover {
+        &:hover,
+        &:active {
             & > .card > img {
                 opacity: 1;
             }
