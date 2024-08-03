@@ -16,12 +16,17 @@
             <div class="mobile-menu-container-header">
                 <a class="mobile-menu-toggle"><i class="fas fa-times fa-lg"></i></a>
             </div>
-            <a href="">HOME</a>
-            <a href="">ABOUT</a>
-            <a href="">WORK</a>
-            <a href="">SKILLS</a>
-            <a href="">CONTACT</a>
+            <a href="index.html">HOME</a>
+            <a class="lang" data-message="about" href="">ABOUT</a>
+            <a class="lang" data-message="work" href="">WORK</a>
+            <a class="lang" data-message="skills" href="">SKILLS</a>
+            <a class="lang" data-message="contact" href="">CONTACT</a>
             <a class="dropdown">LANGUAGES</a>
+            <div class="lang-selector dropdown-content">
+                <a data-lang="en">English</a>
+                <a data-lang="fr">Français</a>
+                <a data-lang="jp">日本語</a>
+            </div>
         </div>
     </div>
    <div class="header">
@@ -30,13 +35,18 @@
                <a href="index.html">MD Test3</a>
            </div>
            <div class="nav-menu">
-               <a href="">ABOUT</a>
-               <a href="">WORK</a>
-               <a href="">SKILLS</a>
-               <a href="">CONTACT</a>
+               <a class="lang" data-message="about" href="">ABOUT</a>
+               <a class="lang" data-message="work" href="">WORK</a>
+               <a class="lang" data-message="skills" href="">SKILLS</a>
+               <a class="lang" data-message="contact" href="">CONTACT</a>
            </div>
            <div class="nav-language">
-               <a>Aa</a>
+               <a class="dropdown"><i class="fas fa-language fa-lg"></i></a>
+               <div class="lang-selector dropdown-content">
+                   <a data-lang="en">English</a>
+                   <a data-lang="fr">Français</a>
+                   <a data-lang="jp">日本語</a>
+               </div>
            </div>
            <div class="mobile-menu-toggle">
                 <a><i class="fas fa-bars fa-lg"></i></a>
@@ -50,25 +60,25 @@
                 <div class="card card-shine">
                     <img src="assets/img/about.jpg" alt="">
                 </div>
-                <h1>ABOUT</h1>
+                <h1 class="lang" data-message="about">ABOUT</h1>
             </a>
             <a>
                 <div class="card">
                     <img src="assets/img/work.jpg" alt="">
                 </div>
-                <h1>WORK</h1>
+                <h1 class="lang" data-message="work">WORK</h1>
             </a>
             <a>
                 <div class="card">
                     <img src="assets/img/skills.jpg" alt="">
                 </div>
-                <h1>SKILLS</h1>
+                <h1 class="lang" data-message="skills">SKILLS</h1>
             </a>
             <a>
                 <div class="card">
                     <img src="assets/img/contact.jpg" alt="">
                 </div>
-                <h1>CONTACT</h1>
+                <h1 class="lang" data-message="contact">CONTACT</h1>
             </a>
         </div>
     </main>

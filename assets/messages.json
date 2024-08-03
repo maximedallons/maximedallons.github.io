@@ -1,0 +1,20 @@
+{
+  "en" : {
+    "about" : "ABOUT",
+    "work" : "WORK",
+    "skills" : "SKILLS",
+    "contact" : "CONTACT"
+  },
+  "fr" : {
+    "about" : "À PROPOS",
+    "work" : "EXPÉRIENCES",
+    "skills" : "COMPÉTENCES",
+    "contact" : "CONTACT"
+  },
+  "jp" : {
+    "about" : "自己紹介",
+    "work" : "経歴",
+    "skills" : "スキル",
+    "contact" : "連絡先"
+  }
+}
