@@ -144,7 +144,7 @@ body {
     }
 
     .cards-container {
-        height: 100dvh;
+        height: 100dvh !important;
         flex-direction: column !important;
 
         & > card {
