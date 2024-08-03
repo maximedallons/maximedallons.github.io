@@ -1,4 +1,4 @@
-const APP_VERSION = '1.0.8';
+const APP_VERSION = '1.0.9';
 
 $(function() {
     initLanguage();
@@ -13,6 +13,17 @@ $(function() {
     // select handler
     $(".lang-selector > a").on("click",function() {
         changeLanguage($(this).attr('data-lang'));
+    });
+
+    $(".dropdown").on("click",function() {
+        var dropdownContent = $(this).next();
+        dropdownContent.show();
+    });
+
+    $(document).on("click",function(e) {
+        if (!$(e.target).closest(".dropdown").length) {
+            $(".dropdown-content").hide();
+        }
     });
 })
 

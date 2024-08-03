@@ -59,14 +59,11 @@ body {
                 }
             }
 
-            &:hover + .dropdown-content,
-            &:active + .dropdown-content,
-            &:focus + .dropdown-content {
+            &:hover + .dropdown-content {
                 display: block;
             }
 
-            & + .dropdown-content:hover,
-            & + .dropdown-content:active {
+            & + .dropdown-content:hover {
                 display: block;
             }
         }
