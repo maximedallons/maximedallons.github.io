@@ -3,18 +3,21 @@
     "about" : "ABOUT",
     "work" : "WORK",
     "skills" : "SKILLS",
-    "contact" : "CONTACT"
+    "contact" : "CONTACT",
+    "languages" : "LANGUAGES",
   },
   "fr" : {
     "about" : "À PROPOS",
     "work" : "EXPÉRIENCES",
     "skills" : "COMPÉTENCES",
-    "contact" : "CONTACT"
+    "contact" : "CONTACT",
+    "languages" : "LANGUES",
   },
   "jp" : {
     "about" : "自己紹介",
     "work" : "経歴",
     "skills" : "スキル",
-    "contact" : "連絡先"
+    "contact" : "連絡先",
+    "languages" : "言語",
   }
 }
