@@ -51,7 +51,8 @@ body {
                     }
 
                     &:hover,
-                    &:active {
+                    &:active,
+                    &:focus {
                         color: #8a8a8a !important;
                         background-color: var(--primary-color);
                     }
@@ -59,7 +60,8 @@ body {
             }
 
             &:hover + .dropdown-content,
-            &:active + .dropdown-content {
+            &:active + .dropdown-content,
+            &:focus + .dropdown-content {
                 display: block;
             }
 
@@ -137,7 +139,8 @@ body {
             cursor: pointer;
 
             &:hover,
-            &:active {
+            &:active,
+            &:focus {
                 background: var(--button-background-color);
                 color: var(--background-color);
             }
@@ -193,7 +196,8 @@ body {
             cursor: pointer;
 
             &:hover,
-            &:active {
+            &:active,
+            &:focus {
                 background: var(--button-background-color);
                 color: var(--background-color);
             }
@@ -205,7 +209,8 @@ body {
             padding: 0.25rem 1rem;
 
             &:hover,
-            &:active {
+            &:active,
+            &:focus {
                 background: var(--secondary-color-hover);
             }
         }
@@ -293,7 +298,8 @@ body {
         }
 
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
             & > .card > img {
                 opacity: 1;
             }
