@@ -109,6 +109,19 @@ body {
             font-size: 1.5rem;
         }
 
+        & > .dropdown-content {
+            position: relative !important;
+        }
+
+        & > .debug {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+        }
+
         & > a {
             color: var(--primary-color);
             opacity: 1;

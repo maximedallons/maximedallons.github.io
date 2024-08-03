@@ -1,19 +1,33 @@
 const BASE_URL = 'https://maximedallons.github.io';
+const APP_VERSION = '1.0.0';
 
 $(function() {
     initLanguage();
+    initVersionDebug();
 
     $('.cards-container').addClass('loaded');
 
-    $(".mobile-menu-toggle").click(function() {
+    $(".mobile-menu-toggle").on("click",function() {
         $(".mobile-menu-container").toggleClass("active");
     });
 
     // select handler
-    $(".lang-selector > a").click(function() {
+    $(".lang-selector > a").on("click",function() {
         changeLanguage($(this).attr('data-lang'));
     });
 })
+
+function initVersionDebug() {
+    var clicks = 0;
+    $(".debug-btn").on("click", function() {
+        clicks++;
+        if (clicks == 5) {
+            $(".debug").html('App version: ' + APP_VERSION);
+            console.log('App version: ' + APP_VERSION);
+            clicks = 0;
+        }
+    });
+}
 
 function initLanguage() {
     // detect initial browser language
