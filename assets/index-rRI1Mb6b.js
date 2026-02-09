@@ -125,11 +125,11 @@ A nostalgic yet modern izakaya where you can recharge your energy any day of the
           <p class="contact-detail">${h.contact.hours.lastorder}</p>
           <p class="contact-detail">${h.contact.hours.closed}</p>
         </div>
-        <div class="contact-card">
+        <a class="contact-card" href="tel:${h.contact.phone.number}">
           <div class="contact-icon">📞</div>
           <h3>${h.contact.phone.title}</h3>
           <p class="contact-phone">${h.contact.phone.number}</p>
-        </div>
+        </a>
       </div>
 
       <div class="payment-section">

@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33699350-fef4-4c99-bc7e-ea194177131a" name="Changes" comment="#6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="33699350-fef4-4c99-bc7e-ea194177131a" name="Changes" comment="#7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="541" />
+    <option name="cachedIndexableFilesCount" value="543" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -72,6 +70,7 @@
       <workItem from="1770023493705" duration="653000" />
       <workItem from="1770024479794" duration="60000" />
       <workItem from="1770620011931" duration="9000" />
+      <workItem from="1770620262046" duration="180000" />
     </task>
     <task id="LOCAL-00001" summary="Changed to HANI website">
       <option name="closed" value="true" />
@@ -113,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770024523541</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="#7">
+      <option name="closed" value="true" />
+      <created>1770620301801</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770620301801</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +132,7 @@
     <MESSAGE value="#4" />
     <MESSAGE value="#5" />
     <MESSAGE value="#6" />
-    <option name="LAST_COMMIT_MESSAGE" value="#6" />
+    <MESSAGE value="#7" />
+    <option name="LAST_COMMIT_MESSAGE" value="#7" />
   </component>
 </project>
